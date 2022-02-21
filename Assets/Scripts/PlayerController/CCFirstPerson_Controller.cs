@@ -132,6 +132,7 @@ public class CCFirstPerson_Controller : MonoBehaviour
         {
             isFalling = false;
             gravityMultiplier = defaultGravityMultiplier;
+            moveDirection.y = -2;
             if (isJumping)
             {
                 moveDirection.y = jumpForce;
