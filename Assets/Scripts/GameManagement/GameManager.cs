@@ -18,5 +18,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
-
+    public void SpeakerDestroyed()
+    {
+        speakersRemaining--;
+        //Do other stuff here, UI elements or whatever...
+    }
 }

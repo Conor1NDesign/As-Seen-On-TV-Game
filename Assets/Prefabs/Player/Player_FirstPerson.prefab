@@ -525,7 +525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxMoveSpeed: 8
-  inertiaSpeed: 0.035
+  inertiaSpeed: 0.075
   jumpForce: 12
   mouseSensitivityX: 30
   mouseSensitivityY: 30
