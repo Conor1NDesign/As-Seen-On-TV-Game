@@ -24,9 +24,12 @@ public class SpeakerManager : MonoBehaviour
 
     public void PlayLaughTrack()
     {
-        int trackListNumber = Random.Range(0, laughTracks.Count);
-        laughToPlay = laughTracks[trackListNumber];
-        audioSource.clip = laughToPlay;
-        audioSource.Play();
+        if (!audioSource.isPlaying)
+        {
+            int trackListNumber = Random.Range(0, laughTracks.Count);
+            laughToPlay = laughTracks[trackListNumber];
+            audioSource.clip = laughToPlay;
+            audioSource.Play();
+        }
     }
 }
