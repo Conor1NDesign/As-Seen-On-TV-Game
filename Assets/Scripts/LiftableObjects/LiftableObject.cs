@@ -11,10 +11,16 @@ public class LiftableObject : MonoBehaviour
     [Range(0.01f, 0.5f)]
     public float lerpValue = 0.035f;
 
+    [Tooltip("The strength of the force applied to an object when it is released by the Player")]
+    [Range(1, 10)]
+    public int throwStrength = 2;
+
+    
     public GameObject targetPosition;
 
     public bool beingHeld = false;
 
+    private Vector3 storedVelocity;
     private Rigidbody rb;
 
     public void Awake()
@@ -33,25 +39,30 @@ public class LiftableObject : MonoBehaviour
 
     public void OnPickup(GameObject target)
     {
+        //rb.velocity = Vector3.zero;
         targetPosition = target;
         beingHeld = true;
-        rb.useGravity = false;
+        //rb.useGravity = false;
     }
 
     public void OnRelease()
     {
         targetPosition = null;
         beingHeld = false;
-        rb.useGravity = true;
+        rb.velocity = storedVelocity * throwStrength;
+        //rb.useGravity = true;
     }
 
     public void MoveTowardsTarget()
     {
+        rb.velocity = Vector3.zero;
         float xVelocity = Mathf.Lerp(transform.position.x, targetPosition.transform.position.x, lerpValue);
         float yVelocity = Mathf.Lerp(transform.position.y, targetPosition.transform.position.y, lerpValue);
         float zVelocity = Mathf.Lerp(transform.position.z, targetPosition.transform.position.z, lerpValue);
 
         Vector3 moveVelocity = new Vector3(xVelocity, yVelocity, zVelocity);
+        storedVelocity = targetPosition.transform.position - transform.position;
+
 
         transform.position = Vector3.MoveTowards(transform.position, moveVelocity, carrySpeed * Time.deltaTime);
     }
