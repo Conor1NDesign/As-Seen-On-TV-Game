@@ -145,6 +145,11 @@ namespace DialogueEditor
 
         public void StartConversation(NPCConversation conversation)
         {
+            //I shoved this code in here to make the Player Controller work with this a little better -Conor
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+            GameObject.FindGameObjectWithTag("Player").GetComponent<CCFirstPerson_Controller>().canMove = false;
+
             m_conversation = conversation.Deserialize();
             if (OnConversationStarted != null)
                 OnConversationStarted.Invoke();
@@ -157,6 +162,11 @@ namespace DialogueEditor
         public void EndConversation()
         {
             SetState(eState.TransitioningDialogueOff);
+
+            //I shoved this code in here to make the Player Controller work with this a little better -Conor
+            GameObject.FindGameObjectWithTag("Player").GetComponent<CCFirstPerson_Controller>().canMove = true;
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
 
             if (OnConversationEnded != null)
                 OnConversationEnded.Invoke();

@@ -35,6 +35,8 @@ public class NPCConversationManager : MonoBehaviour
         {
             ConversationManager.Instance.EndConversation();
         }
+        else
+            return;
     }
 
     // Update is called once per frame

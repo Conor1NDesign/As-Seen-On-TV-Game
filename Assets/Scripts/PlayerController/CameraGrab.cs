@@ -17,6 +17,7 @@ public class CameraGrab : MonoBehaviour
 
     private bool holdingObject = false;
     private GameObject graspedObject;
+    private GameObject conversationNPC;
 
     public CCFirstPerson_Controller characterController;
 
@@ -78,7 +79,13 @@ public class CameraGrab : MonoBehaviour
         else if (context.started && Physics.Raycast(transform.position, transform.forward, out castHit, grabRange, npcMask))
         {
             GameObject hitObject = castHit.collider.gameObject;
-            hitObject.GetComponent<NPCConversationManager>().StartConversation();
+            if (conversationNPC == null)
+            {
+                conversationNPC = hitObject;
+                hitObject.GetComponent<NPCConversationManager>().StartConversation();
+            }
+            else
+                return;
         }
     }
 }

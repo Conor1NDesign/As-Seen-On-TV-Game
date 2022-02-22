@@ -21,6 +21,8 @@ public class CCFirstPerson_Controller : MonoBehaviour
     private bool isJumping;
     private Vector3 moveDirection;
     [Header("Movement Variables")]
+    [HideInInspector]
+    public bool canMove = true;
     [Tooltip("The maximum possible movespeed for the player.")]
     public float maxMoveSpeed;
     [Tooltip("The inertia level on the player's movement. Values closer to 0.1 mean they'll come to a stop faster.")]
@@ -94,6 +96,7 @@ public class CCFirstPerson_Controller : MonoBehaviour
         mouseInputY = context.ReadValue<float>();
     }
 
+    //This is where we'd set up the pause menu when we wanna jump on that
     public void OnEscapePress(CallbackContext context)
     {
         if (context.performed)
@@ -115,10 +118,14 @@ public class CCFirstPerson_Controller : MonoBehaviour
     {
         inputVector.x = Mathf.Lerp(inputVector.x, rawInputVector.x, inertiaSpeed);
         inputVector.y = Mathf.Lerp(inputVector.y, rawInputVector.y, inertiaSpeed);
-        CalculateMovement();
 
-        MouseLookX();
-        MouseLookY();
+        if (canMove)
+        {
+            CalculateMovement();
+
+            MouseLookX();
+            MouseLookY();
+        }
     }
 
     //Calculates the movement direction of the player
