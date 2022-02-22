@@ -18,6 +18,14 @@ public class CameraGrab : MonoBehaviour
     private bool holdingObject = false;
     private GameObject graspedObject;
 
+    public CCFirstPerson_Controller characterController;
+
+
+    private void Awake()
+    {
+        characterController = GameObject.FindGameObjectWithTag("Player").GetComponent<CCFirstPerson_Controller>();
+    }
+
     private void Update()
     {
         if (holdingObject)
@@ -58,6 +66,7 @@ public class CameraGrab : MonoBehaviour
     public void OnInteractAction(CallbackContext context)
     {
         int mask = 1 << 7;
+        int npcMask = 1 << 8;
         if (context.started && Physics.Raycast(transform.position, transform.forward, out castHit, grabRange, mask))
         {
             GameObject hitObject = castHit.collider.gameObject;
@@ -65,6 +74,11 @@ public class CameraGrab : MonoBehaviour
             {
                 hitObject.GetComponent<SpeakerManager>().PlayLaughTrack();
             }
+        }
+        else if (context.started && Physics.Raycast(transform.position, transform.forward, out castHit, grabRange, npcMask))
+        {
+            GameObject hitObject = castHit.collider.gameObject;
+            hitObject.GetComponent<NPCConversationManager>().StartConversation();
         }
     }
 }
