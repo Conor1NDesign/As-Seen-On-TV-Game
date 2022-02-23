@@ -88,10 +88,15 @@ public class CameraGrab : MonoBehaviour
             else
                 return;
         }
-        else if (context.started && holdingObject == true)
+        
+        if (context.started && holdingObject == true)
         {
             //Do the throw thing here
-            //graspedObject.GetComponent<LiftableObject>().ThrowObject(transform.forward);
+            graspedObject.GetComponent<LiftableObject>().ThrowObject(transform.forward);
+
+            holdingObject = false;
+
+            graspedObject = null;
         }
     }
 }

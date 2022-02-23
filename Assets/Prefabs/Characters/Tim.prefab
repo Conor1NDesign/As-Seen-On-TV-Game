@@ -105,6 +105,7 @@ GameObject:
   - component: {fileID: 885471255463756689}
   - component: {fileID: 5030989620148610551}
   - component: {fileID: 8750017747227052455}
+  - component: {fileID: 3407296730371620919}
   m_Layer: 8
   m_Name: Tim
   m_TagString: Untagged
@@ -156,6 +157,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conversationToStart: {fileID: 0}
+  playerCamera: {fileID: 0}
+--- !u!114 &3407296730371620919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504970260412946731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a8601c33d559c24f938c046f2639a94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timLooksAt: 2
+  headTurnSpeed: 20
+  cameraOnWall: {fileID: 0}
+  neckJoint: {fileID: 221789012962947077}
+  lookIdle: {fileID: 0}
 --- !u!1 &514881762867357102
 GameObject:
   m_ObjectHideFlags: 0

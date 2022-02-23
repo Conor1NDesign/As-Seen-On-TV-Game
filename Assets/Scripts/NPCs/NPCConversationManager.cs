@@ -8,6 +8,8 @@ public class NPCConversationManager : MonoBehaviour
     public NPCConversation conversationToStart;
     public CameraGrab playerCamera;
 
+    public List<SpeakerManager> linkedSpeakers;
+
     private void Awake()
     {
         if (conversationToStart == null)
@@ -39,9 +41,12 @@ public class NPCConversationManager : MonoBehaviour
             return;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void PlayLaughTracks()
     {
-        Debug.Log(ConversationManager.Instance.IsConversationActive);
+        if (linkedSpeakers.Count != 0)
+            foreach (var item in linkedSpeakers)
+            {
+                item.PlayLaughTrack();
+            }
     }
 }

@@ -53,6 +53,13 @@ public class LiftableObject : MonoBehaviour
         //rb.useGravity = true;
     }
 
+    public void ThrowObject(Vector3 cameraForward)
+    {
+        targetPosition = null;
+        beingHeld = false;
+        rb.velocity = (storedVelocity + (cameraForward * throwStrength)) * throwStrength;
+    }
+
     public void MoveTowardsTarget()
     {
         rb.velocity = Vector3.zero;

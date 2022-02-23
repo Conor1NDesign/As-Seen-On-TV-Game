@@ -61,6 +61,10 @@ public class CCFirstPerson_Controller : MonoBehaviour
     private CharacterController controller;
     private GameObject playerCamera;
 
+    //Bools that activates player special abilities, such as CameraSight
+    [HideInInspector]
+    public bool cameraSightActive = false;
+
     //Called when the object containing the script is activated or instantiated.
     public void Awake()
     {
