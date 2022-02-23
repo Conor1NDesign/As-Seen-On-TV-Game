@@ -105,7 +105,6 @@ GameObject:
   - component: {fileID: 885471255463756689}
   - component: {fileID: 5030989620148610551}
   - component: {fileID: 8750017747227052455}
-  - component: {fileID: 7856818815315083442}
   m_Layer: 8
   m_Name: Tim
   m_TagString: Untagged
@@ -156,31 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03d91907f3461244e93d54de7a3280c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conversationToStart: {fileID: 7856818815315083442}
---- !u!114 &7856818815315083442
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 504970260412946731}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CurrentIDCounter: 1
-  json: 
-  saveVersion: 0
-  DefaultName: 
-  DefaultSprite: {fileID: 0}
-  DefaultFont: {fileID: 0}
-  NodeSerializedDataList: []
-  ContinueFont: {fileID: 0}
-  EndConversationFont: {fileID: 0}
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
+  conversationToStart: {fileID: 0}
 --- !u!1 &514881762867357102
 GameObject:
   m_ObjectHideFlags: 0

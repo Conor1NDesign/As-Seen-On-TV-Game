@@ -6,7 +6,7 @@ using DialogueEditor;
 public class NPCConversationManager : MonoBehaviour
 {
     public NPCConversation conversationToStart;
-
+    public CameraGrab playerCamera;
 
     private void Awake()
     {
@@ -42,6 +42,6 @@ public class NPCConversationManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Debug.Log(ConversationManager.Instance.IsConversationActive);
     }
 }

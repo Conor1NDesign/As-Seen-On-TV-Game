@@ -17,7 +17,8 @@ public class CameraGrab : MonoBehaviour
 
     private bool holdingObject = false;
     private GameObject graspedObject;
-    private GameObject conversationNPC;
+    [HideInInspector]
+    public GameObject conversationNPC;
 
     public CCFirstPerson_Controller characterController;
 
@@ -86,6 +87,11 @@ public class CameraGrab : MonoBehaviour
             }
             else
                 return;
+        }
+        else if (context.started && holdingObject == true)
+        {
+            //Do the throw thing here
+            //graspedObject.GetComponent<LiftableObject>().ThrowObject(transform.forward);
         }
     }
 }

@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 1817584065877526299}
   m_Layer: 6
   m_Name: PlayerCamera
-  m_TagString: Untagged
+  m_TagString: PlayerCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -218,6 +218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabRange: 10
   targetPosition: {fileID: 7880055541896369464}
+  conversationNPC: {fileID: 0}
   characterController: {fileID: 0}
 --- !u!1 &7286682734463351643
 GameObject:
@@ -525,6 +526,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75b53de0731e63748802c0c9be5657e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canMove: 1
   maxMoveSpeed: 8
   inertiaSpeed: 0.075
   jumpForce: 12

@@ -167,6 +167,7 @@ namespace DialogueEditor
             GameObject.FindGameObjectWithTag("Player").GetComponent<CCFirstPerson_Controller>().canMove = true;
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
+            GameObject.FindGameObjectWithTag("PlayerCamera").GetComponent<CameraGrab>().conversationNPC = null;
 
             if (OnConversationEnded != null)
                 OnConversationEnded.Invoke();
