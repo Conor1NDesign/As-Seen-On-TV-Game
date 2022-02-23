@@ -24,9 +24,15 @@ public class TimLooksAtCamera : MonoBehaviour
     private int timPrankCount = 0;
 
     private bool playerLookAtCamera;
+    private bool playerCameraControl;
 
     public Transform neckJoint;
     public Transform lookIdle;
+
+    private bool firstConversation = true;
+    private bool cameraSightUnlocked = false;
+    private int timLooksAtCamera = 0;
+    private int timPrankCounter = 0;
 
     private void Awake()
     {
@@ -35,6 +41,22 @@ public class TimLooksAtCamera : MonoBehaviour
         {
             Debug.LogError("Tim can't find the player's camera what have you done?");
         }
+    }
+
+    public void GetConversationVariables()
+    {
+        ConversationManager.Instance.SetBool("firstConversation", firstConversation);
+        ConversationManager.Instance.SetBool("cameraSightUnlocked", cameraSightUnlocked);
+        ConversationManager.Instance.SetInt("timPrankCounter", timPrankCounter);
+        ConversationManager.Instance.SetInt("timLooksAtCamera", timLooksAtCamera);
+    }
+
+    public void SetConversationVariables()
+    {
+        firstConversation = ConversationManager.Instance.GetBool("firstConversation");
+        cameraSightUnlocked = ConversationManager.Instance.GetBool("cameraSightUnlocked");
+        timPrankCounter = ConversationManager.Instance.GetInt("timPrankCounter");
+        timLooksAtCamera = ConversationManager.Instance.GetInt("timLooksAtCamera");
     }
 
     public void LookAtCamera()
@@ -68,6 +90,7 @@ public class TimLooksAtCamera : MonoBehaviour
 
     public void PlayerLookAtCamera()
     {
+        playerCameraControl = true;
         if (!playerLookAtCamera)
         {
             playerLookAtCamera = true;
@@ -78,29 +101,46 @@ public class TimLooksAtCamera : MonoBehaviour
             playerLookAtCamera = false;
     }
 
+    public void RestorePlayerCameraControl()
+    {
+        playerCameraControl = false;
+    }
+
     private void Update()
     {
         //Just what the heck is Tim looking at?
         if (timLooksAt == TimLooksAt.Idle)
         {
-            neckJoint.transform.rotation = Quaternion.RotateTowards(neckJoint.transform.rotation, lookIdle.rotation, headTurnSpeed * Time.deltaTime);
+            var lookPos = lookIdle.position - neckJoint.position;
+            var rotation = Quaternion.LookRotation(lookPos);
+            neckJoint.transform.rotation = Quaternion.Slerp(neckJoint.rotation, rotation, headTurnSpeed * Time.deltaTime);
         }
         else if (timLooksAt == TimLooksAt.Player)
         {
-            neckJoint.transform.rotation = Quaternion.RotateTowards(neckJoint.transform.rotation, playerCamera.transform.rotation, headTurnSpeed * Time.deltaTime);
+            var lookPos = playerCamera.transform.position - neckJoint.position;
+            var rotation = Quaternion.LookRotation(lookPos);
+            neckJoint.transform.rotation = Quaternion.Slerp(neckJoint.rotation, rotation, headTurnSpeed * Time.deltaTime);
         }
         else if (timLooksAt == TimLooksAt.Camera)
         {
-            neckJoint.transform.rotation = Quaternion.RotateTowards(neckJoint.transform.rotation, cameraOnWall.transform.rotation, headTurnSpeed * Time.deltaTime);
+            var lookPos = cameraOnWall.transform.position - neckJoint.position;
+            var rotation = Quaternion.LookRotation(lookPos);
+            neckJoint.transform.rotation = Quaternion.Slerp(neckJoint.rotation, rotation, headTurnSpeed * Time.deltaTime);
         }
 
-        if (playerLookAtCamera)
+        if (playerLookAtCamera && playerCameraControl)
         {
-            playerCamera.transform.rotation = Quaternion.RotateTowards(playerCamera.transform.rotation, cameraOnWall.transform.rotation, headTurnSpeed * Time.deltaTime);
+            var lookPos = cameraOnWall.transform.position - playerCamera.transform.position;
+            var rotation = Quaternion.LookRotation(lookPos);
+            playerCamera.transform.rotation = Quaternion.Slerp(playerCamera.transform.rotation, rotation, headTurnSpeed * Time.deltaTime);
+            //playerCameraControl = false;
         }
-        else
+        else if (!playerLookAtCamera && playerCameraControl)
         {
-            playerCamera.transform.rotation = Quaternion.RotateTowards(playerCamera.transform.rotation, neckJoint.rotation, headTurnSpeed * Time.deltaTime);
+            var lookPos = neckJoint.position - playerCamera.transform.position;
+            var rotation = Quaternion.LookRotation(lookPos);
+            playerCamera.transform.rotation = Quaternion.Slerp(playerCamera.transform.rotation, rotation, headTurnSpeed * Time.deltaTime);
+            //playerCameraControl = false;
         }
     }
 }

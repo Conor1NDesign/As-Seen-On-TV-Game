@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DialogueEditor;
 
 public class CameraSight : MonoBehaviour
 {
@@ -13,10 +14,13 @@ public class CameraSight : MonoBehaviour
 
     public void ActivateCameraSight()
     {
+        playerController.cameraSightActive = true;
+
+        ConversationManager.Instance.SetBool("cameraSightUnlocked", true);
+
         foreach (var item in GameObject.FindGameObjectsWithTag("HiddenCamera"))
         {
-            playerController.cameraSightActive = true;
-            gameObject.layer = 0;
+            item.gameObject.layer = 0;
         }
     }
 }

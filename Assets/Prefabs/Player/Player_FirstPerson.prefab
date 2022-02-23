@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 7286682733890868200}
   - component: {fileID: 7286682733890868201}
   - component: {fileID: 1817584065877526299}
+  - component: {fileID: 2222140772058860941}
   m_Layer: 6
   m_Name: PlayerCamera
   m_TagString: PlayerCamera
@@ -219,7 +220,20 @@ MonoBehaviour:
   grabRange: 10
   targetPosition: {fileID: 7880055541896369464}
   conversationNPC: {fileID: 0}
-  characterController: {fileID: 0}
+  characterController: {fileID: 7286682734938389012}
+--- !u!114 &2222140772058860941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7286682733890868203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2096dd949c0ba9f4a9a0364226717646, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerController: {fileID: 7286682734938389012}
 --- !u!1 &7286682734463351643
 GameObject:
   m_ObjectHideFlags: 0
@@ -538,6 +552,7 @@ MonoBehaviour:
   maxGravityMultiplier: 4
   gravityRampUp: 10
   gravityMultiplier: 0
+  cameraSightActive: 0
 --- !u!1 &7880055541896369464
 GameObject:
   m_ObjectHideFlags: 0

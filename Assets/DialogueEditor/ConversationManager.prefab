@@ -324,10 +324,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScrollText: 1
-  ScrollSpeed: 1
+  ScrollSpeed: 0.5
   BackgroundImage: {fileID: 21300000, guid: 4efaf23acdb599f40af3445180a18e68, type: 3}
   BackgroundImageSliced: 1
-  OptionImage: {fileID: 21300000, guid: 4efaf23acdb599f40af3445180a18e68, type: 3}
+  OptionImage: {fileID: 21300000, guid: 79f36d5a0c54c634486859daca94837e, type: 3}
   OptionImageSliced: 1
   AllowMouseInteraction: 1
   DialoguePanel: {fileID: 3900108755395677323}
@@ -503,7 +503,7 @@ MonoBehaviour:
   m_ChildAlignment: 7
   m_Spacing: 15
   m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 1
+  m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 1
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
