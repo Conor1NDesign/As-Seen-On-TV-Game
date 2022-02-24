@@ -10,6 +10,11 @@ public class CameraSight : MonoBehaviour
     private void Awake()
     {
         playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<CCFirstPerson_Controller>();
+
+        foreach (var item in GameObject.FindGameObjectsWithTag("HiddenCamera"))
+        {
+            item.GetComponent<Collider>().enabled = false;
+        }
     }
 
     public void ActivateCameraSight()
@@ -21,6 +26,7 @@ public class CameraSight : MonoBehaviour
         foreach (var item in GameObject.FindGameObjectsWithTag("HiddenCamera"))
         {
             item.gameObject.layer = 0;
+            item.GetComponent<Collider>().enabled = true;
         }
     }
 }

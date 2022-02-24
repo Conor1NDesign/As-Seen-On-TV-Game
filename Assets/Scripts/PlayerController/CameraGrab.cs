@@ -33,6 +33,18 @@ public class CameraGrab : MonoBehaviour
         if (holdingObject)
         {
             Debug.DrawRay(transform.position, transform.forward * castHit.distance, Color.yellow);
+
+            if (Physics.Linecast(graspedObject.transform.position, targetPosition.transform.position, out RaycastHit linecastHit))
+            {
+                if (linecastHit.collider.gameObject.layer == 0)
+                {
+                    holdingObject = false;
+
+                    graspedObject.GetComponent<LiftableObject>().OnRelease();
+
+                    graspedObject = null;
+                }
+            }
         }
     }
 
