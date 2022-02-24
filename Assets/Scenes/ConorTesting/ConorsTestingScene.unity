@@ -644,6 +644,13 @@ GameObject:
   - component: {fileID: 171046018}
   - component: {fileID: 171046017}
   - component: {fileID: 171046019}
+  - component: {fileID: 171046026}
+  - component: {fileID: 171046025}
+  - component: {fileID: 171046024}
+  - component: {fileID: 171046023}
+  - component: {fileID: 171046022}
+  - component: {fileID: 171046021}
+  - component: {fileID: 171046020}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -699,8 +706,321 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 972603361}
+        m_TargetAssemblyTypeName: TerryMinefeld, Assembly-CSharp
+        m_MethodName: GetConversationVariables
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   NodeID: 0
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 70e433de46068504fa56fcf7f49b32b1, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &171046020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171046016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 972603361}
+        m_TargetAssemblyTypeName: TerryMinefeld, Assembly-CSharp
+        m_MethodName: SetConversationVariables
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 972603361}
+        m_TargetAssemblyTypeName: TerryMinefeld, Assembly-CSharp
+        m_MethodName: LookAtPlayer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  NodeID: 9
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &171046021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171046016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 972603361}
+        m_TargetAssemblyTypeName: TerryMinefeld, Assembly-CSharp
+        m_MethodName: TerryStandUpCounterIncrease
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 981002315}
+        m_TargetAssemblyTypeName: NPCConversationManager, Assembly-CSharp
+        m_MethodName: PlayLaughTracks
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  NodeID: 8
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 05d2f7d9c7b743d45abf47eaa7c94924, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &171046022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171046016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 972603361}
+        m_TargetAssemblyTypeName: TerryMinefeld, Assembly-CSharp
+        m_MethodName: TerryStandUpCounterIncrease
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 981002315}
+        m_TargetAssemblyTypeName: NPCConversationManager, Assembly-CSharp
+        m_MethodName: PlayLaughTracks
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  NodeID: 7
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 05d2f7d9c7b743d45abf47eaa7c94924, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &171046023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171046016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 972603361}
+        m_TargetAssemblyTypeName: TerryMinefeld, Assembly-CSharp
+        m_MethodName: TerryStandUpCounterIncrease
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 981002315}
+        m_TargetAssemblyTypeName: NPCConversationManager, Assembly-CSharp
+        m_MethodName: PlayLaughTracks
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  NodeID: 6
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 05d2f7d9c7b743d45abf47eaa7c94924, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &171046024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171046016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 972603361}
+        m_TargetAssemblyTypeName: TerryMinefeld, Assembly-CSharp
+        m_MethodName: TerryStandUpCounterIncrease
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 981002315}
+        m_TargetAssemblyTypeName: NPCConversationManager, Assembly-CSharp
+        m_MethodName: PlayLaughTracks
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  NodeID: 5
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 05d2f7d9c7b743d45abf47eaa7c94924, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &171046025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171046016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 972603361}
+        m_TargetAssemblyTypeName: TerryMinefeld, Assembly-CSharp
+        m_MethodName: TerryStandUpCounterIncrease
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 981002315}
+        m_TargetAssemblyTypeName: NPCConversationManager, Assembly-CSharp
+        m_MethodName: PlayLaughTracks
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  NodeID: 4
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 05d2f7d9c7b743d45abf47eaa7c94924, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &171046026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171046016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 972603361}
+        m_TargetAssemblyTypeName: TerryMinefeld, Assembly-CSharp
+        m_MethodName: TerryStandUpCounterIncrease
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 981002315}
+        m_TargetAssemblyTypeName: NPCConversationManager, Assembly-CSharp
+        m_MethodName: PlayLaughTracks
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  NodeID: 3
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 05d2f7d9c7b743d45abf47eaa7c94924, type: 3}
   Audio: {fileID: 0}
@@ -1307,6 +1627,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d906de5bf82bd44b9d46cc9409b1714, type: 3}
+--- !u!1 &268286251
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 268286252}
+  m_Layer: 0
+  m_Name: TerryIdle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &268286252
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268286251}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5, y: 1.75, z: 5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &280125387
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1570,19 +1921,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2129453484}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   NodeID: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 70e433de46068504fa56fcf7f49b32b1, type: 3}
@@ -2347,18 +2686,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2129453484}
-        m_TargetAssemblyTypeName: IntroConversation, Assembly-CSharp
-        m_MethodName: LookAtMeldon
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   NodeID: 39
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
@@ -3059,6 +3386,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 646176166}
   m_CullTransparentMesh: 1
+--- !u!4 &671910419 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7733760147678263217, guid: 91bd7b456b21f99429b658980c6ab5e5,
+    type: 3}
+  m_PrefabInstance: {fileID: 981002314}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &700509211
 GameObject:
   m_ObjectHideFlags: 0
@@ -3631,56 +3964,56 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 47
-  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":295,"yPos":234},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"Are
-    you alright?","parentUIDs":[2],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":521,"yPos":235},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"Hey,
-    what are you up to?","parentUIDs":[2],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":1226,"yPos":818},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"Have
-    you heard any weird laughter today?","parentUIDs":[11,13,14,19],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":823,"yPos":523},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"See
-    you ''round, Tim.","parentUIDs":[11,13,14,19],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":906,"yPos":1003},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"Neat
-    present, I guess The Boss likes jello?","parentUIDs":[11,13,14,19],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":0,"RequiredValue":0}],"NodeUID":21},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":0,"RequiredValue":1}],"NodeUID":25},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":0,"RequiredValue":2}],"NodeUID":26},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":0,"RequiredValue":3}],"NodeUID":27},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":0,"RequiredValue":4}],"NodeUID":28},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":0,"RequiredValue":5}],"NodeUID":29},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":2,"RequiredValue":5}],"NodeUID":30}],"EditorInfo":{"isRoot":false,"xPos":376,"yPos":1018},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"Been
-    up to anything interesting lately?","parentUIDs":[11,13,14,19],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":35}],"EditorInfo":{"isRoot":false,"xPos":9,"yPos":860},"ID":31,"ParamActions":[],"TMPFontGUID":null,"Text":"What
-    do you keep looking at?","parentUIDs":[11,13,14,19],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":0,"RequiredValue":0}],"NodeUID":21},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":0,"RequiredValue":1}],"NodeUID":25},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":0,"RequiredValue":2}],"NodeUID":26},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":0,"RequiredValue":3}],"NodeUID":27},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":0,"RequiredValue":4}],"NodeUID":28},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":0,"RequiredValue":5}],"NodeUID":29},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":0,"RequiredValue":6}],"NodeUID":30}],"EditorInfo":{"isRoot":false,"xPos":375,"yPos":1085},"ID":33,"ParamActions":[],"TMPFontGUID":null,"Text":"Pulled
-    any other interesting pranks lately?","parentUIDs":[11,13,14,19],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":-34,"yPos":229},"ID":34,"ParamActions":[],"TMPFontGUID":null,"Text":"Yep,
-    shouldn''t be long now though.","parentUIDs":[32],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":37}],"EditorInfo":{"isRoot":false,"xPos":-436,"yPos":857},"ID":36,"ParamActions":[],"TMPFontGUID":null,"Text":"Cameras?
-    What cameras?","parentUIDs":[35],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":-663,"yPos":1223},"ID":46,"ParamActions":[],"TMPFontGUID":null,"Text":"Thanks
-    Tim, see you around.","parentUIDs":[45],"SpeechUID":-1}],"Parameters":[{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"firstConversation","BoolValue":true},{"__type":"EditableIntParameter:#DialogueEditor","ParameterName":"timLooksAtCamera","IntValue":0},{"__type":"EditableIntParameter:#DialogueEditor","ParameterName":"timPrankCounter","IntValue":0},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"cameraSightUnlocked","BoolValue":false}],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"firstConversation","CheckType":0,"RequiredValue":true}],"NodeUID":1},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"firstConversation","CheckType":0,"RequiredValue":false},{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"cameraSightUnlocked","CheckType":0,"RequiredValue":false}],"NodeUID":13},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"cameraSightUnlocked","CheckType":0,"RequiredValue":true},{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"firstConversation","CheckType":0,"RequiredValue":false}],"NodeUID":32}],"EditorInfo":{"isRoot":true,"xPos":191.5,"yPos":45},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"As
-    you approach, Tim turns to face you.","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":409,"yPos":45},"ID":1,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"firstConversation","Value":false}],"TMPFontGUID":null,"Text":"You
-    lock eyes for a brief moment, and you find his expression to be almost contagious.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":3},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":408,"yPos":133},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"After
-    a few seconds, you decide to break the silence...","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":false,"xPos":405,"yPos":301},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"The
-    Boss asked me to come in for a meeting, but he''s not here...","parentUIDs":[3,4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tim","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":405,"yPos":484},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"Tim
-    turns away to look at something.","parentUIDs":[7],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":6}],"EditorInfo":{"isRoot":false,"xPos":405,"yPos":391},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"I
-    left a present on his desk and everything.","parentUIDs":[5],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tim","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":1446,"yPos":723},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"Tim
-    glances away to stare at nothing in particular again.","parentUIDs":[10],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":1445,"yPos":806},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"Nope,
-    haven''t heard anything like that.","parentUIDs":[8],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tim","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":8},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":12},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":15},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":0,"RequiredValue":0}],"NodeUID":20},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":2,"RequiredValue":0}],"NodeUID":33},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timLooksAtCamera","CheckType":2,"RequiredValue":2}],"NodeUID":31}],"EditorInfo":{"isRoot":false,"xPos":823,"yPos":583},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"It
-    doesn''t seem like Tim is going to directly open up about the laughter...","parentUIDs":[9],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":8},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":12},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":15},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":0,"RequiredValue":0}],"NodeUID":20},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":2,"RequiredValue":0}],"NodeUID":33},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timLooksAtCamera","CheckType":2,"RequiredValue":2}],"NodeUID":31}],"EditorInfo":{"isRoot":false,"xPos":194,"yPos":580},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"Much
+  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":512,"yPos":211},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"Are
+    you alright?","parentUIDs":[2],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":738,"yPos":212},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"Hey,
+    what are you up to?","parentUIDs":[2],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":1443,"yPos":795},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"Have
+    you heard any weird laughter today?","parentUIDs":[11,13,14,19],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":1040,"yPos":500},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"See
+    you ''round, Tim.","parentUIDs":[11,13,14,19],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":1123,"yPos":980},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"Neat
+    present, I guess The Boss likes jello?","parentUIDs":[11,13,14,19],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":0,"RequiredValue":0}],"NodeUID":21},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":0,"RequiredValue":1}],"NodeUID":25},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":0,"RequiredValue":2}],"NodeUID":26},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":0,"RequiredValue":3}],"NodeUID":27},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":0,"RequiredValue":4}],"NodeUID":28},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":0,"RequiredValue":5}],"NodeUID":29},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":2,"RequiredValue":5}],"NodeUID":30}],"EditorInfo":{"isRoot":false,"xPos":593,"yPos":995},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"Been
+    up to anything interesting lately?","parentUIDs":[11,13,14,19],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":35}],"EditorInfo":{"isRoot":false,"xPos":226,"yPos":837},"ID":31,"ParamActions":[],"TMPFontGUID":null,"Text":"What
+    do you keep looking at?","parentUIDs":[11,13,14,19],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":0,"RequiredValue":0}],"NodeUID":21},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":0,"RequiredValue":1}],"NodeUID":25},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":0,"RequiredValue":2}],"NodeUID":26},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":0,"RequiredValue":3}],"NodeUID":27},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":0,"RequiredValue":4}],"NodeUID":28},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":0,"RequiredValue":5}],"NodeUID":29},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":0,"RequiredValue":6}],"NodeUID":30}],"EditorInfo":{"isRoot":false,"xPos":592,"yPos":1062},"ID":33,"ParamActions":[],"TMPFontGUID":null,"Text":"Pulled
+    any other interesting pranks lately?","parentUIDs":[11,13,14,19],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":183,"yPos":206},"ID":34,"ParamActions":[],"TMPFontGUID":null,"Text":"Yep,
+    shouldn''t be long now though.","parentUIDs":[32],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":37}],"EditorInfo":{"isRoot":false,"xPos":-219,"yPos":834},"ID":36,"ParamActions":[],"TMPFontGUID":null,"Text":"Cameras?
+    What cameras?","parentUIDs":[35],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":-446,"yPos":1200},"ID":46,"ParamActions":[],"TMPFontGUID":null,"Text":"Thanks
+    Tim, see you around.","parentUIDs":[45],"SpeechUID":-1}],"Parameters":[{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"firstConversation","BoolValue":true},{"__type":"EditableIntParameter:#DialogueEditor","ParameterName":"timLooksAtCamera","IntValue":0},{"__type":"EditableIntParameter:#DialogueEditor","ParameterName":"timPrankCounter","IntValue":0},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"cameraSightUnlocked","BoolValue":false}],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"firstConversation","CheckType":0,"RequiredValue":true}],"NodeUID":1},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"firstConversation","CheckType":0,"RequiredValue":false},{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"cameraSightUnlocked","CheckType":0,"RequiredValue":false}],"NodeUID":13},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"cameraSightUnlocked","CheckType":0,"RequiredValue":true},{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"firstConversation","CheckType":0,"RequiredValue":false}],"NodeUID":32}],"EditorInfo":{"isRoot":true,"xPos":408.5,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"As
+    you approach, Tim turns to face you.","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":626,"yPos":22},"ID":1,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"firstConversation","Value":false}],"TMPFontGUID":null,"Text":"You
+    lock eyes for a brief moment, and you find his expression to be almost contagious.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":3},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":625,"yPos":110},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"After
+    a few seconds, you decide to break the silence...","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":false,"xPos":622,"yPos":278},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"The
+    Boss asked me to come in for a meeting, but he''s not here...","parentUIDs":[3,4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tim","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":622,"yPos":461},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"Tim
+    turns away to look at something.","parentUIDs":[7],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":6}],"EditorInfo":{"isRoot":false,"xPos":622,"yPos":368},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    left a present on his desk and everything.","parentUIDs":[5],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tim","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":1663,"yPos":700},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"Tim
+    glances away to stare at nothing in particular again.","parentUIDs":[10],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":1662,"yPos":783},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"Nope,
+    haven''t heard anything like that.","parentUIDs":[8],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tim","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":8},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":12},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":15},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":0,"RequiredValue":0}],"NodeUID":20},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":2,"RequiredValue":0}],"NodeUID":33},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timLooksAtCamera","CheckType":2,"RequiredValue":2}],"NodeUID":31}],"EditorInfo":{"isRoot":false,"xPos":1040,"yPos":560},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"It
+    doesn''t seem like Tim is going to directly open up about the laughter...","parentUIDs":[9],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":8},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":12},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":15},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":0,"RequiredValue":0}],"NodeUID":20},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":2,"RequiredValue":0}],"NodeUID":33},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timLooksAtCamera","CheckType":2,"RequiredValue":2}],"NodeUID":31}],"EditorInfo":{"isRoot":false,"xPos":411,"yPos":557},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"Much
     like before, you both exchange a similar expression with one another before you
-    start to speak.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":12},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":8},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":15},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":0,"RequiredValue":0}],"NodeUID":20},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timLooksAtCamera","CheckType":2,"RequiredValue":2}],"NodeUID":31},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":2,"RequiredValue":0}],"NodeUID":33}],"EditorInfo":{"isRoot":false,"xPos":404,"yPos":581},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"Before
-    you can follow his gaze, he turns back to face you.","parentUIDs":[6,24],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":905,"yPos":1062},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"Oh,
-    he loves it.","parentUIDs":[15],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tim","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":19}],"EditorInfo":{"isRoot":false,"xPos":1114,"yPos":1063},"ID":17,"ParamActions":[],"TMPFontGUID":null,"Text":"Tim
-    looks away again for a moment.","parentUIDs":[16],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":15},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":8},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":12},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":0,"RequiredValue":0}],"NodeUID":20},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":2,"RequiredValue":0}],"NodeUID":33},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timLooksAtCamera","CheckType":2,"RequiredValue":2}],"NodeUID":31}],"EditorInfo":{"isRoot":false,"xPos":614,"yPos":582},"ID":19,"ParamActions":[],"TMPFontGUID":null,"Text":"He
-    really is the World''s Best Boss.","parentUIDs":[17],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tim","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":24}],"EditorInfo":{"isRoot":false,"xPos":608,"yPos":1005},"ID":21,"ParamActions":[],"TMPFontGUID":null,"Text":"Well,
-    last weekend I replaced all the ink in Bwight''s pens with invisible ink.","parentUIDs":[20,33],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tim","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":607,"yPos":920},"ID":24,"ParamActions":[],"TMPFontGUID":null,"Text":"Tim
-    looks away again for a moment.","parentUIDs":[21,25,26,27,28,29,30],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":24}],"EditorInfo":{"isRoot":false,"xPos":608,"yPos":1095},"ID":25,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    start to speak.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":12},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":8},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":15},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":0,"RequiredValue":0}],"NodeUID":20},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timLooksAtCamera","CheckType":2,"RequiredValue":2}],"NodeUID":31},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":2,"RequiredValue":0}],"NodeUID":33}],"EditorInfo":{"isRoot":false,"xPos":621,"yPos":558},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"Before
+    you can follow his gaze, he turns back to face you.","parentUIDs":[6,24],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":1122,"yPos":1039},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"Oh,
+    he loves it.","parentUIDs":[15],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tim","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":19}],"EditorInfo":{"isRoot":false,"xPos":1331,"yPos":1040},"ID":17,"ParamActions":[],"TMPFontGUID":null,"Text":"Tim
+    looks away again for a moment.","parentUIDs":[16],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":15},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":8},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":12},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":0,"RequiredValue":0}],"NodeUID":20},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timPrankCounter","CheckType":2,"RequiredValue":0}],"NodeUID":33},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"timLooksAtCamera","CheckType":2,"RequiredValue":2}],"NodeUID":31}],"EditorInfo":{"isRoot":false,"xPos":831,"yPos":559},"ID":19,"ParamActions":[],"TMPFontGUID":null,"Text":"He
+    really is the World''s Best Boss.","parentUIDs":[17],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tim","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":24}],"EditorInfo":{"isRoot":false,"xPos":825,"yPos":982},"ID":21,"ParamActions":[],"TMPFontGUID":null,"Text":"Well,
+    last weekend I replaced all the ink in Bwight''s pens with invisible ink.","parentUIDs":[20,33],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tim","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":824,"yPos":897},"ID":24,"ParamActions":[],"TMPFontGUID":null,"Text":"Tim
+    looks away again for a moment.","parentUIDs":[21,25,26,27,28,29,30],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":24}],"EditorInfo":{"isRoot":false,"xPos":825,"yPos":1072},"ID":25,"ParamActions":[],"TMPFontGUID":null,"Text":"I
     took some of Bwight''s stationary last week. I''ve been sending him faxes from
-    himself... From the future.","parentUIDs":[20,33],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tim","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":24}],"EditorInfo":{"isRoot":false,"xPos":608,"yPos":1179},"ID":26,"ParamActions":[],"TMPFontGUID":null,"Text":"Yesterday
-    I traded Bwight some magic beans for a telescope.","parentUIDs":[20,33],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tim","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":24}],"EditorInfo":{"isRoot":false,"xPos":608,"yPos":1264},"ID":27,"ParamActions":[],"TMPFontGUID":null,"Text":"I
-    spent about eleven dollars so I could dress up like Bwight. Drove him crazy.","parentUIDs":[20,33],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tim","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":24}],"EditorInfo":{"isRoot":false,"xPos":609,"yPos":1350},"ID":28,"ParamActions":[],"TMPFontGUID":null,"Text":"The
+    himself... From the future.","parentUIDs":[20,33],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tim","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":24}],"EditorInfo":{"isRoot":false,"xPos":825,"yPos":1156},"ID":26,"ParamActions":[],"TMPFontGUID":null,"Text":"Yesterday
+    I traded Bwight some magic beans for a telescope.","parentUIDs":[20,33],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tim","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":24}],"EditorInfo":{"isRoot":false,"xPos":825,"yPos":1241},"ID":27,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    spent about eleven dollars so I could dress up like Bwight. Drove him crazy.","parentUIDs":[20,33],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tim","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":24}],"EditorInfo":{"isRoot":false,"xPos":826,"yPos":1327},"ID":28,"ParamActions":[],"TMPFontGUID":null,"Text":"The
     vending machine guy helped me put all of Bwight''s stuff into the machine in
-    the lunch room.","parentUIDs":[20,33],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tim","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":24}],"EditorInfo":{"isRoot":false,"xPos":609,"yPos":1437},"ID":29,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    the lunch room.","parentUIDs":[20,33],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tim","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":24}],"EditorInfo":{"isRoot":false,"xPos":826,"yPos":1414},"ID":29,"ParamActions":[],"TMPFontGUID":null,"Text":"I
     stacked my desk on top of Bwight''s last Monday, but for some reason he wasn''t
-    a fan of Quad-Desk...","parentUIDs":[20,33],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tim","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":24}],"EditorInfo":{"isRoot":false,"xPos":609,"yPos":1525},"ID":30,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    a fan of Quad-Desk...","parentUIDs":[20,33],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tim","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":24}],"EditorInfo":{"isRoot":false,"xPos":826,"yPos":1502},"ID":30,"ParamActions":[],"TMPFontGUID":null,"Text":"I
     paid the rest of the office to call Bwight \"Bwayne\" for the day. Only five
-    bucks each.","parentUIDs":[20,33],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tim","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":34}],"EditorInfo":{"isRoot":false,"xPos":-34,"yPos":132},"ID":32,"ParamActions":[],"TMPFontGUID":null,"Text":"Still
-    hunting for those speakers, huh?","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tim","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":36}],"EditorInfo":{"isRoot":false,"xPos":-216,"yPos":843},"ID":35,"ParamActions":[],"TMPFontGUID":null,"Text":"Wait,
-    you can''t see the cameras?","parentUIDs":[31],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tim","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":38}],"EditorInfo":{"isRoot":false,"xPos":-655,"yPos":840},"ID":37,"ParamActions":[],"TMPFontGUID":null,"Text":"There''s
-    one of them right there!","parentUIDs":[36],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tim","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":39}],"EditorInfo":{"isRoot":false,"xPos":-654,"yPos":932},"ID":38,"ParamActions":[],"TMPFontGUID":null,"Text":"Surely
-    enough, right where Tim is looking stands a camera. How did you miss that earler?","parentUIDs":[37],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":40}],"EditorInfo":{"isRoot":false,"xPos":-651,"yPos":1023},"ID":39,"ParamActions":[],"TMPFontGUID":null,"Text":"You
-    wear a puzzled look on your face, and much to your surprise...","parentUIDs":[38],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":41}],"EditorInfo":{"isRoot":false,"xPos":-435,"yPos":1023},"ID":40,"ParamActions":[],"TMPFontGUID":null,"Text":"You
-    hear the laughter!","parentUIDs":[39],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":43}],"EditorInfo":{"isRoot":false,"xPos":-216,"yPos":1023},"ID":41,"ParamActions":[],"TMPFontGUID":null,"Text":"Wow,
-    you really couldn''t see those, huh? I guess you don''t belong here after all.","parentUIDs":[40],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tim","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":44}],"EditorInfo":{"isRoot":false,"xPos":-215,"yPos":1115},"ID":43,"ParamActions":[],"TMPFontGUID":null,"Text":"You''ll
+    bucks each.","parentUIDs":[20,33],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tim","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":34}],"EditorInfo":{"isRoot":false,"xPos":183,"yPos":109},"ID":32,"ParamActions":[],"TMPFontGUID":null,"Text":"Still
+    hunting for those speakers, huh?","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tim","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":36}],"EditorInfo":{"isRoot":false,"xPos":1,"yPos":820},"ID":35,"ParamActions":[],"TMPFontGUID":null,"Text":"Wait,
+    you can''t see the cameras?","parentUIDs":[31],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tim","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":38}],"EditorInfo":{"isRoot":false,"xPos":-438,"yPos":817},"ID":37,"ParamActions":[],"TMPFontGUID":null,"Text":"There''s
+    one of them right there!","parentUIDs":[36],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tim","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":39}],"EditorInfo":{"isRoot":false,"xPos":-437,"yPos":909},"ID":38,"ParamActions":[],"TMPFontGUID":null,"Text":"Surely
+    enough, right where Tim is looking stands a camera. How did you miss that earler?","parentUIDs":[37],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":40}],"EditorInfo":{"isRoot":false,"xPos":-434,"yPos":1000},"ID":39,"ParamActions":[],"TMPFontGUID":null,"Text":"You
+    wear a puzzled look on your face, and much to your surprise...","parentUIDs":[38],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":41}],"EditorInfo":{"isRoot":false,"xPos":-218,"yPos":1000},"ID":40,"ParamActions":[],"TMPFontGUID":null,"Text":"You
+    hear the laughter!","parentUIDs":[39],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":43}],"EditorInfo":{"isRoot":false,"xPos":1,"yPos":1000},"ID":41,"ParamActions":[],"TMPFontGUID":null,"Text":"Wow,
+    you really couldn''t see those, huh? I guess you don''t belong here after all.","parentUIDs":[40],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tim","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":44}],"EditorInfo":{"isRoot":false,"xPos":2,"yPos":1092},"ID":43,"ParamActions":[],"TMPFontGUID":null,"Text":"You''ll
     get a lot of laughs if you just look at a camera and pull a funny face. You should
-    give it a try more often.","parentUIDs":[41],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tim","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":45}],"EditorInfo":{"isRoot":false,"xPos":-215,"yPos":1207},"ID":44,"ParamActions":[],"TMPFontGUID":null,"Text":"You
+    give it a try more often.","parentUIDs":[41],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tim","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":45}],"EditorInfo":{"isRoot":false,"xPos":2,"yPos":1184},"ID":44,"ParamActions":[],"TMPFontGUID":null,"Text":"You
     can now get some laughs by finding and looking at a hidden camera and pulling
-    a face with the ''E'' key!","parentUIDs":[43],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":46}],"EditorInfo":{"isRoot":false,"xPos":-434,"yPos":1207},"ID":45,"ParamActions":[],"TMPFontGUID":null,"Text":"Good
+    a face with the ''E'' key!","parentUIDs":[43],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":46}],"EditorInfo":{"isRoot":false,"xPos":-217,"yPos":1184},"ID":45,"ParamActions":[],"TMPFontGUID":null,"Text":"Good
     luck getting out of here.","parentUIDs":[44],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tim","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: Tim
@@ -3777,19 +4110,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 1
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[],"EditorInfo":{"isRoot":true,"xPos":436.5,"yPos":136},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Terry","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+  CurrentIDCounter: 10
+  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":407,"yPos":397},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"Nice
+    one Terry.","parentUIDs":[3,4,5,6,7,8],"SpeechUID":-1}],"Parameters":[{"__type":"EditableIntParameter:#DialogueEditor","ParameterName":"terryStandUpCounter","IntValue":0}],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"terryStandUpCounter","CheckType":0,"RequiredValue":0}],"NodeUID":3},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"terryStandUpCounter","CheckType":0,"RequiredValue":1}],"NodeUID":4},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"terryStandUpCounter","CheckType":0,"RequiredValue":2}],"NodeUID":5},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"terryStandUpCounter","CheckType":0,"RequiredValue":3}],"NodeUID":6},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"terryStandUpCounter","CheckType":0,"RequiredValue":4}],"NodeUID":7},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"terryStandUpCounter","CheckType":0,"RequiredValue":5}],"NodeUID":8}],"EditorInfo":{"isRoot":true,"xPos":408.5,"yPos":21},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Terry
+    seems to be practicing for a stand-up routine...","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":-132,"yPos":186},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"What''s
+    the deal with airline food?","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Terry","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":86,"yPos":204},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"What''s
+    up with the peep-holes around construction sites?","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Terry","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":301,"yPos":226},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"What''s
+    the deal with seniors driving?","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Terry","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":517,"yPos":225},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"What''s
+    up with the snooze button on alarm clocks?","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Terry","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":729,"yPos":205},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"What''s
+    the deal with extreme sports?","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Terry","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":947,"yPos":186},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"What''s
+    up with seedless watermelon?","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Terry","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: Terry
   DefaultSprite: {fileID: 21300000, guid: 05d2f7d9c7b743d45abf47eaa7c94924, type: 3}
   DefaultFont: {fileID: 0}
   NodeSerializedDataList:
   - {fileID: 171046019}
+  - {fileID: 171046026}
+  - {fileID: 171046025}
+  - {fileID: 171046024}
+  - {fileID: 171046023}
+  - {fileID: 171046022}
+  - {fileID: 171046021}
+  - {fileID: 171046020}
   ContinueFont: {fileID: 0}
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 972603361}
+        m_TargetAssemblyTypeName: TerryMinefeld, Assembly-CSharp
+        m_MethodName: SetConversationVariables
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 972603361}
+        m_TargetAssemblyTypeName: TerryMinefeld, Assembly-CSharp
+        m_MethodName: LookAtPlayer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &972603361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3802,6 +4174,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2af52f7ce621d84d866f3911a00aed5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  headTurnSpeed: 3
+  terryStandUpCounter: 0
+  neckJoint: {fileID: 671910419}
+  terryIdlePos: {fileID: 268286251}
+  lookAtPlayer: 0
 --- !u!1001 &981002314
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3886,6 +4263,18 @@ PrefabInstance:
       objectReference: {fileID: 972603360}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91bd7b456b21f99429b658980c6ab5e5, type: 3}
+--- !u!114 &981002315 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2927820917428822474, guid: 91bd7b456b21f99429b658980c6ab5e5,
+    type: 3}
+  m_PrefabInstance: {fileID: 981002314}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972603356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03d91907f3461244e93d54de7a3280c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1321916131
 GameObject:
   m_ObjectHideFlags: 0
@@ -6366,47 +6755,47 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 40
-  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":6}],"EditorInfo":{"isRoot":false,"xPos":123,"yPos":262},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"Open
-    your eyes...","parentUIDs":[4],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":-20,"yPos":420},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"Ahhh!
-    Who are you!?","parentUIDs":[6],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":265,"yPos":422},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"Where
-    am I?","parentUIDs":[6],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":506,"yPos":912},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"Where
-    is that laughter coming from?","parentUIDs":[15],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":24}],"EditorInfo":{"isRoot":false,"xPos":365,"yPos":1283},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"You...
-    Can''t hear that?","parentUIDs":[19],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":22}],"EditorInfo":{"isRoot":false,"xPos":645,"yPos":1284},"ID":21,"ParamActions":[],"TMPFontGUID":null,"Text":"Enough!
-    I''m not crazy, and I don''t live here!","parentUIDs":[19],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":36}],"EditorInfo":{"isRoot":false,"xPos":491,"yPos":2127},"ID":35,"ParamActions":[],"TMPFontGUID":null,"Text":"I
-    have to find out where that laughter is coming from.","parentUIDs":[31],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":424,"yPos":339},"ID":39,"ParamActions":[],"TMPFontGUID":null,"Text":"Skip
-    Intro","parentUIDs":[6],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":123.5,"yPos":-218},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"You
-    are awoken by the sound of knocking at your door...","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":null,"OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":123,"yPos":-123},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Player...?","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":123,"yPos":-26},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"They
-    knock again...","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":123,"yPos":68},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"Player...?","parentUIDs":[2],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":124,"yPos":166},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"They
-    knock once more...","parentUIDs":[3],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":7},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":8},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":39}],"EditorInfo":{"isRoot":false,"xPos":122,"yPos":327},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"Player?","parentUIDs":[5],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":265,"yPos":487},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"You''re
-    in the United States of America. Did you hit your head or something?","parentUIDs":[8],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":15}],"EditorInfo":{"isRoot":false,"xPos":261,"yPos":808},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"What
-    a strange question to ask first thing in the morning.","parentUIDs":[9,14],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":-19,"yPos":489},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"The
-    stranger looks offended.","parentUIDs":[7],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":-20,"yPos":586},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"Well,
+  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":6}],"EditorInfo":{"isRoot":false,"xPos":307,"yPos":385},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"Open
+    your eyes...","parentUIDs":[4],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":164,"yPos":543},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"Ahhh!
+    Who are you!?","parentUIDs":[6],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":449,"yPos":545},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"Where
+    am I?","parentUIDs":[6],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":690,"yPos":1035},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"Where
+    is that laughter coming from?","parentUIDs":[15],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":24}],"EditorInfo":{"isRoot":false,"xPos":549,"yPos":1406},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"You...
+    Can''t hear that?","parentUIDs":[19],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":22}],"EditorInfo":{"isRoot":false,"xPos":829,"yPos":1407},"ID":21,"ParamActions":[],"TMPFontGUID":null,"Text":"Enough!
+    I''m not crazy, and I don''t live here!","parentUIDs":[19],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":36}],"EditorInfo":{"isRoot":false,"xPos":675,"yPos":2250},"ID":35,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    have to find out where that laughter is coming from.","parentUIDs":[31],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":608,"yPos":462},"ID":39,"ParamActions":[],"TMPFontGUID":null,"Text":"Skip
+    Intro","parentUIDs":[6],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":307.5,"yPos":-95},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"You
+    are awoken by the sound of knocking at your door...","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":null,"OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":307,"yPos":0},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Player...?","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":307,"yPos":98},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"They
+    knock again...","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":307,"yPos":191},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"Player...?","parentUIDs":[2],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":308,"yPos":289},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"They
+    knock once more...","parentUIDs":[3],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":7},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":8},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":39}],"EditorInfo":{"isRoot":false,"xPos":306,"yPos":450},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"Player?","parentUIDs":[5],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":449,"yPos":610},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"You''re
+    in the United States of America. Did you hit your head or something?","parentUIDs":[8],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":15}],"EditorInfo":{"isRoot":false,"xPos":445,"yPos":931},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"What
+    a strange question to ask first thing in the morning.","parentUIDs":[9,14],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":165,"yPos":612},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"The
+    stranger looks offended.","parentUIDs":[7],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":164,"yPos":709},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"Well,
     there''s just no need for that. Your roomate agreement specifically states no
-    shouting in the apartment before 11am.","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":-20,"yPos":699},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"Honestly,
-    you''ve been living here for years now, and you still slip up like that.","parentUIDs":[12],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":-21,"yPos":809},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"Furthermore,
-    you know who I am. I''m your roomate.","parentUIDs":[13],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":506,"yPos":809},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"Perhaps
-    you''re hungry? I have noticed that you''re looking more malnourished than usual.","parentUIDs":[10],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":18}],"EditorInfo":{"isRoot":false,"xPos":506,"yPos":984},"ID":17,"ParamActions":[],"TMPFontGUID":null,"Text":"Oh
-    dear, not only are you malnourished, but you''re delusional as well.","parentUIDs":[16],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":19}],"EditorInfo":{"isRoot":false,"xPos":505,"yPos":1079},"ID":18,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    shouting in the apartment before 11am.","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":164,"yPos":822},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"Honestly,
+    you''ve been living here for years now, and you still slip up like that.","parentUIDs":[12],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":163,"yPos":932},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"Furthermore,
+    you know who I am. I''m your roomate.","parentUIDs":[13],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":690,"yPos":932},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"Perhaps
+    you''re hungry? I have noticed that you''re looking more malnourished than usual.","parentUIDs":[10],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":18}],"EditorInfo":{"isRoot":false,"xPos":690,"yPos":1107},"ID":17,"ParamActions":[],"TMPFontGUID":null,"Text":"Oh
+    dear, not only are you malnourished, but you''re delusional as well.","parentUIDs":[16],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":19}],"EditorInfo":{"isRoot":false,"xPos":689,"yPos":1202},"ID":18,"ParamActions":[],"TMPFontGUID":null,"Text":"I
     suppose I always knew this day would come. You really never could handle the
-    stresses of your workplace very well.","parentUIDs":[17],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":20},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":21}],"EditorInfo":{"isRoot":false,"xPos":505,"yPos":1174},"ID":19,"ParamActions":[],"TMPFontGUID":null,"Text":"We''ll
-    get you checked into the local Mental Asylum later today.","parentUIDs":[18],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":23}],"EditorInfo":{"isRoot":false,"xPos":646,"yPos":1351},"ID":22,"ParamActions":[],"TMPFontGUID":null,"Text":"Your
-    outburst seems to startle the stranger.","parentUIDs":[21],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":26}],"EditorInfo":{"isRoot":false,"xPos":645,"yPos":1449},"ID":23,"ParamActions":[],"TMPFontGUID":null,"Text":"That''s
+    stresses of your workplace very well.","parentUIDs":[17],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":20},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":21}],"EditorInfo":{"isRoot":false,"xPos":689,"yPos":1297},"ID":19,"ParamActions":[],"TMPFontGUID":null,"Text":"We''ll
+    get you checked into the local Mental Asylum later today.","parentUIDs":[18],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":23}],"EditorInfo":{"isRoot":false,"xPos":830,"yPos":1474},"ID":22,"ParamActions":[],"TMPFontGUID":null,"Text":"Your
+    outburst seems to startle the stranger.","parentUIDs":[21],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":26}],"EditorInfo":{"isRoot":false,"xPos":829,"yPos":1572},"ID":23,"ParamActions":[],"TMPFontGUID":null,"Text":"That''s
     a bit of an overreaction. So you have a slight mental break and suddenly we''re
-    no longer roomates?","parentUIDs":[22],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":25}],"EditorInfo":{"isRoot":false,"xPos":365,"yPos":1348},"ID":24,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    no longer roomates?","parentUIDs":[22],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":25}],"EditorInfo":{"isRoot":false,"xPos":549,"yPos":1471},"ID":24,"ParamActions":[],"TMPFontGUID":null,"Text":"I
     get my hearing checked regularly, and I assure you that my eardrums are in perfect
-    working order.","parentUIDs":[20],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":26}],"EditorInfo":{"isRoot":false,"xPos":366,"yPos":1446},"ID":25,"ParamActions":[],"TMPFontGUID":null,"Text":"I
-    go to great lengths to avoid anything that is louder than seventy decibels.","parentUIDs":[24],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":27}],"EditorInfo":{"isRoot":false,"xPos":491,"yPos":1552},"ID":26,"ParamActions":[],"TMPFontGUID":null,"Text":"You''re
-    being ridiculous, the others have come over for our bi-monthly Gamer Day.","parentUIDs":[23,25],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":28}],"EditorInfo":{"isRoot":false,"xPos":490,"yPos":1650},"ID":27,"ParamActions":[],"TMPFontGUID":null,"Text":"I
-    can tolerate your rampant, excessive laziness because I''m such a brilliant friend...","parentUIDs":[26],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":29}],"EditorInfo":{"isRoot":false,"xPos":491,"yPos":1744},"ID":28,"ParamActions":[],"TMPFontGUID":null,"Text":"And
+    working order.","parentUIDs":[20],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":26}],"EditorInfo":{"isRoot":false,"xPos":550,"yPos":1569},"ID":25,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    go to great lengths to avoid anything that is louder than seventy decibels.","parentUIDs":[24],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":27}],"EditorInfo":{"isRoot":false,"xPos":675,"yPos":1675},"ID":26,"ParamActions":[],"TMPFontGUID":null,"Text":"You''re
+    being ridiculous, the others have come over for our bi-monthly Gamer Day.","parentUIDs":[23,25],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":28}],"EditorInfo":{"isRoot":false,"xPos":674,"yPos":1773},"ID":27,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    can tolerate your rampant, excessive laziness because I''m such a brilliant friend...","parentUIDs":[26],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":29}],"EditorInfo":{"isRoot":false,"xPos":675,"yPos":1867},"ID":28,"ParamActions":[],"TMPFontGUID":null,"Text":"And
     I have long since accepted that a flawed being such as yourself will never amount
-    to the greatness that I embody...","parentUIDs":[27],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":30}],"EditorInfo":{"isRoot":false,"xPos":490,"yPos":1839},"ID":29,"ParamActions":[],"TMPFontGUID":null,"Text":"However,
-    my mother would always tell me...","parentUIDs":[28],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":31}],"EditorInfo":{"isRoot":false,"xPos":491,"yPos":1935},"ID":30,"ParamActions":[],"TMPFontGUID":null,"Text":"\"Meldon,
+    to the greatness that I embody...","parentUIDs":[27],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":30}],"EditorInfo":{"isRoot":false,"xPos":674,"yPos":1962},"ID":29,"ParamActions":[],"TMPFontGUID":null,"Text":"However,
+    my mother would always tell me...","parentUIDs":[28],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":31}],"EditorInfo":{"isRoot":false,"xPos":675,"yPos":2058},"ID":30,"ParamActions":[],"TMPFontGUID":null,"Text":"\"Meldon,
     you can''t just be sitting around all day by your lonesome, now go out and make
-    some friends.\"","parentUIDs":[29],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Meldon","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":35}],"EditorInfo":{"isRoot":false,"xPos":491,"yPos":2031},"ID":31,"ParamActions":[],"TMPFontGUID":null,"Text":"And
-    I would suggest you come out and do the same.","parentUIDs":[30],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Meldon","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":37}],"EditorInfo":{"isRoot":false,"xPos":492,"yPos":2194},"ID":36,"ParamActions":[],"TMPFontGUID":null,"Text":"Meldon
-    looks at you as if you''re crazy.","parentUIDs":[35],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":38}],"EditorInfo":{"isRoot":false,"xPos":492,"yPos":2298},"ID":37,"ParamActions":[],"TMPFontGUID":null,"Text":"Fine,
+    some friends.\"","parentUIDs":[29],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Meldon","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":35}],"EditorInfo":{"isRoot":false,"xPos":675,"yPos":2154},"ID":31,"ParamActions":[],"TMPFontGUID":null,"Text":"And
+    I would suggest you come out and do the same.","parentUIDs":[30],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Meldon","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":37}],"EditorInfo":{"isRoot":false,"xPos":676,"yPos":2317},"ID":36,"ParamActions":[],"TMPFontGUID":null,"Text":"Meldon
+    looks at you as if you''re crazy.","parentUIDs":[35],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":38}],"EditorInfo":{"isRoot":false,"xPos":676,"yPos":2421},"ID":37,"ParamActions":[],"TMPFontGUID":null,"Text":"Fine,
     suit yourself. But I''m not moving from this spot until you''re ready to come
-    out.","parentUIDs":[36],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Meldon","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":493,"yPos":2395},"ID":38,"ParamActions":[],"TMPFontGUID":null,"Text":"It''s
+    out.","parentUIDs":[36],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Meldon","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":677,"yPos":2518},"ID":38,"ParamActions":[],"TMPFontGUID":null,"Text":"It''s
     pretty clear that Meldon isn''t leaving, but you''ve got to find the source of
     this annoying laughter before you investigate where you are.","parentUIDs":[37],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
@@ -6459,18 +6848,6 @@ MonoBehaviour:
       - m_Target: {fileID: 2129453484}
         m_TargetAssemblyTypeName: IntroConversation, Assembly-CSharp
         m_MethodName: MeldonLookAtPlayer
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2129453484}
-        m_TargetAssemblyTypeName: IntroConversation, Assembly-CSharp
-        m_MethodName: LookAtMeldon
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
