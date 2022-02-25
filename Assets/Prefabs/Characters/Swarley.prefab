@@ -45,7 +45,8 @@ GameObject:
   - component: {fileID: 1136585169402233605}
   - component: {fileID: -84282797253292176}
   - component: {fileID: 7759039522316056165}
-  - component: {fileID: 2139519197568173514}
+  - component: {fileID: 526440830699813127}
+  - component: {fileID: 1964598757876175598}
   m_Layer: 8
   m_Name: Swarley
   m_TagString: Untagged
@@ -96,8 +97,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03d91907f3461244e93d54de7a3280c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conversationToStart: {fileID: 2139519197568173514}
---- !u!114 &2139519197568173514
+  conversationToStart: {fileID: 526440830699813127}
+  playerCamera: {fileID: 0}
+  linkedSpeakers: []
+--- !u!114 &526440830699813127
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,6 +124,18 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1964598757876175598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328242274662275519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e5f51cdc8d07734a85799f1dca73d4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &725729669377567756
 GameObject:
   m_ObjectHideFlags: 0
