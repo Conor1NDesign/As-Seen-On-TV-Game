@@ -14,10 +14,14 @@ public class IntroConversation : MonoBehaviour
     private bool fadeIn;
     private bool fadeOut;
 
+    public string playerName = "Speeve";
+
     private void Awake()
     {
         Invoke("WakeUp", 0.5f);
         meldon = GameObject.Find("Meldon");
+
+        //playerName = GameObject.Find("PlayerNameHolder").playerName;
     }
 
     private void Update()
@@ -57,6 +61,14 @@ public class IntroConversation : MonoBehaviour
         }
         fadeIn = false;
         fadeOut = false;
+    }
+
+    public void OverrideDialogueText(int dialogueInt)
+    {
+        if (dialogueInt == 0)
+            ConversationManager.Instance.DialogueText.text = playerName + "...";
+        else if (dialogueInt == 1)
+            ConversationManager.Instance.DialogueText.text = playerName + "?";
     }
 
     public void LookAtMeldon()

@@ -995,7 +995,6 @@ GameObject:
   - component: {fileID: 4706157844339139885}
   - component: {fileID: -3986049574242003530}
   - component: {fileID: 2942832909828308044}
-  - component: {fileID: 5627701486537913652}
   m_Layer: 8
   m_Name: Doss
   m_TagString: Untagged
@@ -1046,31 +1045,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03d91907f3461244e93d54de7a3280c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conversationToStart: {fileID: 5627701486537913652}
---- !u!114 &5627701486537913652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5333512157523935127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CurrentIDCounter: 1
-  json: 
-  saveVersion: 0
-  DefaultName: 
-  DefaultSprite: {fileID: 0}
-  DefaultFont: {fileID: 0}
-  NodeSerializedDataList: []
-  ContinueFont: {fileID: 0}
-  EndConversationFont: {fileID: 0}
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
+  conversationToStart: {fileID: 0}
+  playerCamera: {fileID: 0}
+  linkedSpeakers: []
 --- !u!1 &5353784355498476259
 GameObject:
   m_ObjectHideFlags: 0
