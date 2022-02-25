@@ -24,7 +24,7 @@ public class Doss : MonoBehaviour
     {
         playerCamera = GameObject.FindGameObjectWithTag("PlayerCamera");
 
-        //playerName = GameObject.Find("PlayerNameHolder").playerName;
+        //playerName = GameObject.Find("PlayerNameHolder").GetComponent<PlayerNameHolder>().playerName;
     }
 
     public void LookAtPlayer()

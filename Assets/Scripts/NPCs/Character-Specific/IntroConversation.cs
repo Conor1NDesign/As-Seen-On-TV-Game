@@ -21,7 +21,7 @@ public class IntroConversation : MonoBehaviour
         Invoke("WakeUp", 0.5f);
         meldon = GameObject.Find("Meldon");
 
-        //playerName = GameObject.Find("PlayerNameHolder").playerName;
+        //playerName = GameObject.Find("PlayerNameHolder").GetComponent<PlayerNameHolder>().playerName;
     }
 
     private void Update()
