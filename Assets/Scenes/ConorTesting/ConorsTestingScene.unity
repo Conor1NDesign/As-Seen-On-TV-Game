@@ -2589,7 +2589,7 @@ PrefabInstance:
     - target: {fileID: 1110372113272613353, guid: 8d906de5bf82bd44b9d46cc9409b1714,
         type: 3}
       propertyPath: m_Name
-      value: Meldon
+      value: TutorialMeldon
       objectReference: {fileID: 0}
     - target: {fileID: 2305321713057381175, guid: 8d906de5bf82bd44b9d46cc9409b1714,
         type: 3}
@@ -3058,6 +3058,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 789ee944630b15e46a45586fe52c7bdb, type: 3}
   - {fileID: 8300000, guid: 883f6c00b3038b440b818a1115acd4cf, type: 3}
   beingDestroyed: 0
+  forTutorial: 0
 --- !u!114 &623003944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3398,6 +3399,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 789ee944630b15e46a45586fe52c7bdb, type: 3}
   - {fileID: 8300000, guid: 883f6c00b3038b440b818a1115acd4cf, type: 3}
   beingDestroyed: 0
+  forTutorial: 0
 --- !u!114 &700509214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6430,6 +6432,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 789ee944630b15e46a45586fe52c7bdb, type: 3}
   - {fileID: 8300000, guid: 883f6c00b3038b440b818a1115acd4cf, type: 3}
   beingDestroyed: 0
+  forTutorial: 0
 --- !u!114 &1508134295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7744,6 +7747,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 789ee944630b15e46a45586fe52c7bdb, type: 3}
   - {fileID: 8300000, guid: 883f6c00b3038b440b818a1115acd4cf, type: 3}
   beingDestroyed: 0
+  forTutorial: 0
 --- !u!114 &1922237540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8102,8 +8106,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lerpSpeed: 0.01
   fadeImage: {fileID: 1811467630}
+  headTurnSpeed: 3
   meldon: {fileID: 340071926}
   playerName: Speeve
+  tutorialSpeaker: {fileID: 0}
 --- !u!1001 &4655341838450804037
 PrefabInstance:
   m_ObjectHideFlags: 0

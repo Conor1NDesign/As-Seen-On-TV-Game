@@ -10,16 +10,25 @@ public class IntroConversation : MonoBehaviour
     public float lerpSpeed = 0.035f;
     public Image fadeImage;
 
+    public int headTurnSpeed = 3;
+
     public GameObject meldon;
+    private GameObject playerCamera;
+
     private bool fadeIn;
     private bool fadeOut;
 
+    private bool playerLookSpeaker;
+
     public string playerName = "Speeve";
+
+    public GameObject tutorialSpeaker;
 
     private void Awake()
     {
         Invoke("WakeUp", 0.5f);
-        meldon = GameObject.Find("Meldon");
+        meldon = GameObject.Find("TutorialMeldon");
+        playerCamera = GameObject.FindGameObjectWithTag("PlayerCamera");
 
         //playerName = GameObject.Find("PlayerNameHolder").GetComponent<PlayerNameHolder>().playerName;
     }
@@ -34,6 +43,13 @@ public class IntroConversation : MonoBehaviour
         if (fadeOut)
         {
             fadeImage.color = new Color(0, 0, 0, Mathf.Lerp(fadeImage.color.a, 1, lerpSpeed));
+        }
+
+        if (playerLookSpeaker)
+        {
+            var lookPos = tutorialSpeaker.transform.position - playerCamera.transform.position;
+            var rotation = Quaternion.LookRotation(lookPos);
+            playerCamera.transform.rotation = Quaternion.Slerp(playerCamera.transform.rotation, rotation, headTurnSpeed * Time.deltaTime);
         }
     }
 
@@ -84,5 +100,15 @@ public class IntroConversation : MonoBehaviour
     public void MeldonLookAtPlayer()
     {
         meldon.GetComponent<MeldonIsAnnoying>().LookAtPlayer();
+    }
+
+    public void PlayerLookAtSpeaker()
+    {
+        if (playerLookSpeaker)
+        {
+            playerLookSpeaker = false;
+        }
+        else
+            playerLookSpeaker = true;
     }
 }

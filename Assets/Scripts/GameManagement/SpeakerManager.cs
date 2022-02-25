@@ -13,6 +13,7 @@ public class SpeakerManager : MonoBehaviour
     private AudioSource audioSource;
     private AudioClip laughToPlay;
 
+    public bool forTutorial = false;
 
     private void Awake()
     {
@@ -62,6 +63,11 @@ public class SpeakerManager : MonoBehaviour
 
     public void EndMySuffering()
     {
+        if (forTutorial)
+        {
+            GameObject.Find("TutorialSpeakers").GetComponent<TutorialSpeakers>().SpeakerDestroyed();
+        }
+
         gameManager.SpeakerDestroyed();
         //If you want to instantiate an explosion effect or something when the speaker is destroyed, start here...
         Destroy(gameObject);
