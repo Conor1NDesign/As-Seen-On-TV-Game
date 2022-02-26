@@ -32,6 +32,7 @@ public class LiftableObject : MonoBehaviour
         if (wallMounted)
         {
             rb.isKinematic = true;
+            rb.useGravity = false;
         }
     }
 
