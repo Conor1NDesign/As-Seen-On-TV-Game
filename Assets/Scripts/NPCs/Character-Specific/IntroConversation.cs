@@ -13,6 +13,7 @@ public class IntroConversation : MonoBehaviour
     public int headTurnSpeed = 3;
 
     public GameObject meldon;
+    public GameObject speakerUI;
     private GameObject playerCamera;
 
     private bool fadeIn;

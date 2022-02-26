@@ -20,12 +20,19 @@ public class LiftableObject : MonoBehaviour
 
     public bool beingHeld = false;
 
+    public bool wallMounted = false;
+
     private Vector3 storedVelocity;
     private Rigidbody rb;
 
     public void Awake()
     {
         rb = GetComponent<Rigidbody>();
+
+        if (wallMounted)
+        {
+            rb.isKinematic = true;
+        }
     }
 
     // Update is called once per frame
@@ -40,6 +47,7 @@ public class LiftableObject : MonoBehaviour
     public void OnPickup(GameObject target)
     {
         //rb.velocity = Vector3.zero;
+        rb.isKinematic = false;
         targetPosition = target;
         beingHeld = true;
         //rb.useGravity = false;
@@ -50,7 +58,7 @@ public class LiftableObject : MonoBehaviour
         targetPosition = null;
         beingHeld = false;
         rb.velocity = storedVelocity * throwStrength;
-        //rb.useGravity = true;
+        rb.useGravity = true;
     }
 
     public void ThrowObject(Vector3 cameraForward)

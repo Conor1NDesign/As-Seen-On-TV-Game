@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using DialogueEditor;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,9 +10,16 @@ public class GameManager : MonoBehaviour
     public int speakersRemaining;
     public bool allSpeakersDestroyed = false;
 
+    public TMPro.TextMeshProUGUI speakerUINumber;
+
+    public NPCConversation endingConversation;
+
+    public GameObject endingWall;
+
     public void Awake()
     {
         speakersRemaining = GameObject.FindGameObjectsWithTag("Speaker").Length;
+        speakerUINumber.text = speakersRemaining.ToString();
 
         foreach (var item in GameObject.FindGameObjectsWithTag("Speaker"))
         {
@@ -21,6 +30,20 @@ public class GameManager : MonoBehaviour
     public void SpeakerDestroyed()
     {
         speakersRemaining--;
+        if (speakersRemaining <= 0)
+        {
+            EndingTime();
+        }
+
         //Do other stuff here, UI elements or whatever...
+        speakerUINumber.text = speakersRemaining.ToString();
+    }
+
+    public void EndingTime()
+    {
+        endingWall.SetActive(false);
+        ConversationManager.Instance.EndConversation();
+        gameObject.GetComponent<EndingSequence>().MoveNPCs();
+        ConversationManager.Instance.StartConversation(endingConversation);
     }
 }

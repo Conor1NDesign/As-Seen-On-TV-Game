@@ -17,6 +17,7 @@ public class TutorialSpeakers : MonoBehaviour
     public GameObject meldonReal;
     public GameObject tutorialWindow;
     public GameObject tutorialUI;
+    public GameObject speakersUI;
 
     public NPCConversation conversationToStart;
 
@@ -61,7 +62,7 @@ public class TutorialSpeakers : MonoBehaviour
     {
         RemoveTutorialMeldon();
         playerLookWindow = false;
-        tutorialUI.SetActive(true);
+        speakersUI.SetActive(true);
     }
 
     public void RemoveTutorialMeldon()
