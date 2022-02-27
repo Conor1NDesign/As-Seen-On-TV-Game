@@ -6,7 +6,7 @@ public class EnableOnCollision : MonoBehaviour
 {
     public GameObject lights;
 
-    public void OnTriggerEnter(Collider col)
+    public void OnTriggerStay(Collider col)
     {
         if (col.gameObject.CompareTag("Player"))
         {
