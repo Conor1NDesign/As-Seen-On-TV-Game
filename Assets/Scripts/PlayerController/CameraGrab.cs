@@ -45,6 +45,15 @@ public class CameraGrab : MonoBehaviour
                     graspedObject = null;
                 }
             }
+
+            if (Vector3.Distance(graspedObject.transform.position, targetPosition.transform.position) >= 10)
+            {
+                holdingObject = false;
+
+                graspedObject.GetComponent<LiftableObject>().OnRelease();
+
+                graspedObject = null;
+            }
         }
     }
 
