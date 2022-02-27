@@ -46,7 +46,10 @@ public class NPCConversationManager : MonoBehaviour
         if (linkedSpeakers.Count != 0)
             foreach (var item in linkedSpeakers)
             {
-                item.PlayLaughTrack();
+                if (item != null)
+                {
+                    item.PlayLaughTrack();
+                }
             }
     }
 }

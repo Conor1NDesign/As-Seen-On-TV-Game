@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Game_MainMenu.unity
     guid: b7a67c3600cc01a4a8007ddaabf65aa3
   - enabled: 1
-    path: Assets/Scenes/ConorTesting/ConorsTestingScene.unity
-    guid: 352da04191b401945b90f95e5c5ebe8a
+    path: Assets/Scenes/Harrison/Blockout.unity
+    guid: 84f7c8e49945c214db2954db467a7b0e
   m_configObjects: {}

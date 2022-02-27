@@ -30,13 +30,12 @@ public class GameManager : MonoBehaviour
     public void SpeakerDestroyed()
     {
         speakersRemaining--;
+        //Do other stuff here, UI elements or whatever...
+        speakerUINumber.text = speakersRemaining.ToString();
         if (speakersRemaining <= 0)
         {
             EndingTime();
         }
-
-        //Do other stuff here, UI elements or whatever...
-        speakerUINumber.text = speakersRemaining.ToString();
     }
 
     public void EndingTime()

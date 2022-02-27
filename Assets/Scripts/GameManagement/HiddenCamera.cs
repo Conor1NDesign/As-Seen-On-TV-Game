@@ -10,7 +10,10 @@ public class HiddenCamera : MonoBehaviour
     {
         foreach (var item in linkedSpeakers)
         {
-            item.GetComponent<SpeakerManager>().PlayLaughTrack();
+            if (item != null)
+            {
+                item.GetComponent<SpeakerManager>().PlayLaughTrack();
+            }
         }
     }
 }

@@ -31,7 +31,7 @@ public class IntroConversation : MonoBehaviour
         meldon = GameObject.Find("TutorialMeldon");
         playerCamera = GameObject.FindGameObjectWithTag("PlayerCamera");
 
-        //playerName = GameObject.Find("PlayerNameHolder").GetComponent<PlayerNameHolder>().playerName;
+        playerName = GameObject.Find("PlayerNameHolder").GetComponent<PlayerNameHolder>().playerName;
     }
 
     private void Update()
@@ -85,7 +85,7 @@ public class IntroConversation : MonoBehaviour
         if (dialogueInt == 0)
             ConversationManager.Instance.DialogueText.text = playerName + "...";
         else if (dialogueInt == 1)
-            ConversationManager.Instance.DialogueText.text = playerName + "?";
+            ConversationManager.Instance.DialogueText.text = playerName + "...?";
     }
 
     public void LookAtMeldon()
