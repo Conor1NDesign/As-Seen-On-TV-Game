@@ -25,7 +25,7 @@ public class CameraSight : MonoBehaviour
 
         foreach (var item in GameObject.FindGameObjectsWithTag("HiddenCamera"))
         {
-            item.gameObject.layer = 0;
+            item.gameObject.layer = 7;
             item.GetComponent<Collider>().enabled = true;
         }
     }

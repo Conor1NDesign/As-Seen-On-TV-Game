@@ -65,15 +65,18 @@ public class CameraGrab : MonoBehaviour
             int mask = 1 << 7;
             if (Physics.Raycast(transform.position, transform.forward, out castHit, grabRange, mask) && graspedObject == null)
             {
-                holdingObject = true;
+                if (castHit.collider.gameObject.tag == "LiftableObject" || castHit.collider.gameObject.tag == "Speaker")
+                {
+                    holdingObject = true;
 
-                //Moves the grab targetPosition object to the raycast hit point
-                targetPosition.transform.position = castHit.point;
+                    //Moves the grab targetPosition object to the raycast hit point
+                    targetPosition.transform.position = castHit.point;
 
-                //Assigns the Liftable Object to the relevant variable
-                graspedObject = castHit.collider.gameObject;
+                    //Assigns the Liftable Object to the relevant variable
+                    graspedObject = castHit.collider.gameObject;
 
-                graspedObject.GetComponent<LiftableObject>().OnPickup(targetPosition);
+                    graspedObject.GetComponent<LiftableObject>().OnPickup(targetPosition);
+                }
             }
         }
         else if (context.canceled && graspedObject != null)
@@ -93,9 +96,9 @@ public class CameraGrab : MonoBehaviour
         if (context.started && Physics.Raycast(transform.position, transform.forward, out castHit, grabRange, mask))
         {
             GameObject hitObject = castHit.collider.gameObject;
-            if (hitObject.tag == "Speaker")
+            if (hitObject.tag == "HiddenCamera")
             {
-                hitObject.GetComponent<SpeakerManager>().PlayLaughTrack();
+                hitObject.GetComponent<HiddenCamera>().PlayLaughTracks();
             }
         }
         else if (context.started && Physics.Raycast(transform.position, transform.forward, out castHit, grabRange, npcMask))
